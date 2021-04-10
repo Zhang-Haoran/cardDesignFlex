@@ -1,8 +1,42 @@
-$primary-color = #7b44ca;
-$secondary-color = #3227d0;
+$primary-color : #7b44ca;
+$secondary-color : #3227d0;
+$tertiary-color: #53CBA0;
 %card-shared{
-  position: relative;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  display:flex;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
   border-radius: 10px;
   margin: 2px 2px 2px 2px;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+}
+%card-shared__label{
+  border-radius: 5px;
+  width: 4rem;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: smaller;
+  border: none;
+}
+%card-shared__title{
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+%card-shared__button{
+  width: 8rem;
+  height: 2.7rem;
+  background: linear-gradient(to left,$primary-color, $secondary-color);
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  z-index: 1;
+  color: white;
+}
+%card-shared__paragraph{
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  opacity: 0.6;
 }
